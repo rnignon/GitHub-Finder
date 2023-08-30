@@ -1,4 +1,4 @@
-const accessToken = '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';
+const accessToken = null;
 export default class User {
 
   constructor(username) {
