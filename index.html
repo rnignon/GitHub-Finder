@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <title>Github Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="styles/general.css" rel="stylesheet">
+  <link href="styles/header.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/user-info.css" rel="stylesheet">
+  <link href="styles/user-repo.css" rel="stylesheet">
+  <script type="module" src="src/web.js"></script>
 </head>
 <body>
   <header class="header">
-    <p>Github Finder</p>
+    <a href="./index.html">Github Finder</a>
   </header>
   <main class="main">
-    <section class="main__search">
+    <div class="main__search">
       <h2>Search GitHub Users</h2>
       <form class="search-container">
-        <img src="assets/search.svg" alt="search-icon">
         <input type="text" name="key" placeholder="Enter a username to fetch a user profile and repos">
+        <button type="submit" class="search-container-button">
+          <img class="icon" src="assets/search.svg" alt="search-icon">
+        </button>
       </form>
-    </section>
-    <section class="user-container">
-      <div class="user-info">
-        
-      </div>
-      <div class="user-lawn">
-        
-      </div>
-      <div class="user-repos">
-
-      </div>
-    </section>
+    </div>
+    <div class="user-container">
+      <p class="message">Enter a username to search.</p>
+    </div>
+    <div class="loading-spinner"></div>
   </main>
 </body>
 </html>
