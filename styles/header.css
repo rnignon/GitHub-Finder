@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  background-color: var(--primary);
+  padding: 10px 0px;
+}
+
+.header > a {
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 3em;
+}

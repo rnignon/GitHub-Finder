@@ -8,9 +8,22 @@
 }
 
 :root {
-  --primary: #434878;
-  --secondary: #71769d;
-  --tertiary: #d4d6e5;
+  --primary: #6670c6;
+  --secondary: #e1e4f7;
+  --tertiary: #cec8e1;
 
   --text: #32333f;
+
+  --stars: 255 240 187;
+  --watchers: 223 240 218;
+  --forks: 219 245 239;
+
+  --repo: 179 212 214;
+  --gist: 172 187 212;
+  --follower: 213 216 219;
+  --following: 213 216 219;
+}
+
+.icon {
+  width: 1em;
 }

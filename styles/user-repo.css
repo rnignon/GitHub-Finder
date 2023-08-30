@@ -1,0 +1,96 @@
+.user-repos-container {
+  margin: 1.5em 0;
+}
+
+.user-repos-container > p {
+  margin: 0.5em;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.user-repos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  box-shadow: 0px 0px 3px 0px var(--tertiary);
+  border-radius: 10px;
+  background-color: var(--secondary);
+}
+
+.user-each-repo {
+  white-space: nowrap;
+  margin: 5px;
+  width: 95%;
+  padding: 20px;
+  display: flex;
+  list-style: none;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px var(--tertiary);
+}
+
+.each-repo-infos {
+  margin-left: auto;
+  display: flex;
+}
+
+.each-repo-url {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.each-repo-url:hover {
+  transform:scale(1.02);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.each-repo-stars, .each-repo-watchers, .each-repo-forks {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.each-repo-stars {
+  /* background-color: var(--stars); */
+  background-color: rgb(var(--stars) / 70%);
+}
+
+.each-repo-watchers {
+  background-color: rgb(var(--watchers) / 70%);
+}
+
+.each-repo-forks {
+  background-color: rgb(var(--forks) / 70%);
+}
+
+.each-repo-stars:hover, .each-repo-watchers:hover, .each-repo-forks:hover {
+  box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.5);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.each-repo-stars:hover {
+  background-color: rgb(var(--stars));
+}
+
+.each-repo-watchers:hover {
+  background-color: rgb(var(--watchers));
+}
+
+.each-repo-forks:hover {
+  background-color: rgb(var(--forks));
+}
+
+.each-repo-desc {
+  margin-left: 5px;
+}
