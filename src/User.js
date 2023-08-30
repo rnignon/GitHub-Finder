@@ -10,9 +10,9 @@ export default class User {
 
   async fetchInfo() {
     try {
-      const info = await fetch(this.apiUrl, {method: 'GET', headers: {'Authorization': `Bearer ${accessToken}`,
-                                                                      'Accept' : 'application/vnd.github.v3+json'}});
-      // const info = await fetch(this.apiUrl);
+      // const info = await fetch(this.apiUrl, {method: 'GET', headers: {'Authorization': `Bearer ${accessToken}`,
+      //                                                                 'Accept' : 'application/vnd.github.v3+json'}});
+      const info = await fetch(this.apiUrl);
       if (info.ok) {
         this.userInfo = await info.json();
         return true;
@@ -35,9 +35,9 @@ export default class User {
 
   async fetchRepos() {
     try {
-      const repos = await fetch(this.userInfo.repos_url, {method: 'GET', headers: {'Authorization': `Bearer ${accessToken}`,
-                                                                      'Accept' : 'application/vnd.github.v3+json'}});
-      // const repos = await fetch(this.userInfo.repos_url);
+      // const repos = await fetch(this.userInfo.repos_url, {method: 'GET', headers: {'Authorization': `Bearer ${accessToken}`,
+      //                                                                 'Accept' : 'application/vnd.github.v3+json'}});
+      const repos = await fetch(this.userInfo.repos_url);
       if (repos.ok) {
         this.userRepos = await repos.json();
       }
